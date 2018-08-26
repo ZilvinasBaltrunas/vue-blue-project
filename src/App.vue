@@ -4,18 +4,21 @@
     <AppBox>
       <!-- <router-view></router-view> -->
     </AppBox>
+    <AppFooter/>
   </main>
 </template>
 
 <script>
 import AppHeader from './components/header'
-import AppBox from './components/Box'
+import AppBox from './components/main/Box'
+import AppFooter from './components/footer'
 
 export default {
   name: 'app',
   components: {
     AppHeader,
-    AppBox
+    AppBox,
+    AppFooter
   }
 }
 </script>
