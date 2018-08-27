@@ -1,11 +1,22 @@
 <template>
     <div class="card">
         <div class="card-box">
-            <img class="card-box-img" src="https://ak9.picdn.net/shutterstock/videos/1337989/thumb/1.jpg">
+            <img class="card-box-img" :src="projects.link">
         </div>
-        <p class="name">Projektas</p>
+        <p class="name">{{projects.title}}</p>
     </div>
 </template>
+
+<script>
+    import projects from '../../pages/home'
+    export default {
+        data () {
+            return {
+                projects
+            }
+        }
+    }
+</script>
 
 <style lang="scss" scoped>
 .card {

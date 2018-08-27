@@ -10,7 +10,7 @@
 
 <script>
 import AppHeader from './components/header'
-import AppBox from './components/main/Box'
+import AppBox from './components/main/AppBox'
 import AppFooter from './components/footer'
 
 export default {
