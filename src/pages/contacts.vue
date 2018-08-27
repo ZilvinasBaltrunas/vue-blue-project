@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import AppButton from '../components/button'
+import AppButton from '../components/AppButton'
     export default {
         name: 'contacts',
         components: {
