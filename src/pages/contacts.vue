@@ -1,5 +1,5 @@
 <template>
     <div>
-        CONTACTS
+        KONTAKTAI
     </div>
 </template>
