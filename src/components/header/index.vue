@@ -18,24 +18,24 @@ import HeaderNavigation from './HeaderNavigation'
         components: {
             HeaderNavigation
         },
-        data () {
-            return {
-                navi: [
-                    {
-                        target: '/',
-                        routeName: 'Home'
-                    },
-                    {
-                        target: '/about',
-                        routeName: 'About'
-                    },
-                    {
-                        target: '/contacts',
-                        routeName: 'Contacts'
-                    }
-                ]
-            }
-        }
+        // data () {
+        //     return {
+        //         navi: [
+        //             {
+        //                 target: '/',
+        //                 routeName: 'Home'
+        //             },
+        //             {
+        //                 target: '/about',
+        //                 routeName: 'About'
+        //             },
+        //             {
+        //                 target: '/contacts',
+        //                 routeName: 'Contacts'
+        //             }
+        //         ]
+        //     }
+        // }
     }
 </script>
 

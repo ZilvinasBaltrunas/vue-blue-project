@@ -17,9 +17,21 @@
             </p>
         </section>
         <section class="second__section">
-
+            <div class="nav">
+                <router-link :to="{name: 'Education'}">
+                    ISSILAVINIMAS
+                </router-link>
+                <router-link :to="{name: 'Career'}">
+                    KARJERA
+                </router-link>
+                <router-link :to="{name: 'Knowledge'}">
+                    ZINIOS
+                </router-link>
+            </div>
+            <div class="grey__box">
+                <router-view></router-view>
+            </div>
         </section>
-        
     </div>
 </template>
 
@@ -34,7 +46,15 @@
             }
         }
         .second__section {
-            
+            .nav {
+                margin-bottom: 1rem;
+            }
+            .grey__box {
+                background: #f2f2f2;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                padding-left: 2rem;
+            }
         }
     }
 </style>

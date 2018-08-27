@@ -1,9 +1,9 @@
 <template>
   <main>
     <AppHeader/>
-    <AppBox>
-      <!-- <router-view></router-view> -->
-    </AppBox>
+      <AppBox>
+        <!-- <router-view></router-view> -->
+      </AppBox>
     <AppFooter/>
   </main>
 </template>
