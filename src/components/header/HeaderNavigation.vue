@@ -18,5 +18,9 @@
     a {
         margin-right: 1rem;
     }
+    // .router-link-active {
+    //     text-decoration: underline;
+    //     color: #37E9B8;
+    // }
 }
 </style>
