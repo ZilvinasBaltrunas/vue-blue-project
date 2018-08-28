@@ -1,12 +1,17 @@
 <template>
-    <div class="form">
+    <div v-if="!filledForm" class="form">
         KONTAKTAI
         <p>Vardas</p>
         <input v-model="form.name" type="text">
         <p>Zinute</p>
         <textarea v-model="form.message" type="text"/>
         <AppButton @click.native="getInfo">SIUSTI</AppButton>
-        <p>{{form}}</p>
+    </div>
+    <div v-else >
+        <p>filled form :</p>
+        <div>
+            {{ form }}
+        </div>
     </div>
 </template>
 
@@ -19,11 +24,12 @@ import AppButton from '../components/AppButton'
         },
         methods: {
             getInfo () {
-                console.log(this.form)
+                this.filledForm = !this.filledForm
             }
         },
         data () {
             return {
+                filledForm: false,
                 form: {}
             }
         }
