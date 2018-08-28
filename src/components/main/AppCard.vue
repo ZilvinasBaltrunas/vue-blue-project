@@ -1,19 +1,16 @@
 <template>
     <div class="card">
         <div class="card-box">
-            <img class="card-box-img" :src="projects.link">
+            <img class="card-box-img" :src="project.link">
         </div>
-        <p class="name">{{projects.title}}</p>
+        <p class="name">{{project.title}}</p>
     </div>
 </template>
 
 <script>
-    import projects from '../../pages/home'
     export default {
-        data () {
-            return {
-                projects
-            }
+        props: {
+            project: Object
         }
     }
 </script>

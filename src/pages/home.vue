@@ -2,9 +2,8 @@
     <div class="main">
         <div class="projects"><p>Projektai</p></div>
         <div class="cards">
-            <AppCard :link="link" :title="title" v-for="project in projects"/>
-            <AppCard/>
-            <AppCard/>
+            <AppCard v-for="project in projects" :project="project"/>
+            
         </div>
     </div>
 </template>
@@ -17,9 +16,6 @@ export default {
   components: {
     AppCard
   },
-  props: {
-    projects: Array
-  },
   data () {
     return {
         projects: [
@@ -30,7 +26,7 @@ export default {
             },
             {
                 id: 2,
-                link: 'https://wallpaperbrowse.com/images/page/3#images/3848765-wallpaper-images-download.jpg',
+                link: 'https://countrysidenetwork.com/wp-content/uploads/iStock_000084887435_Small-e1482880740405.jpg',
                 title: '2 projektas'
             },
             {
